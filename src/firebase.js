@@ -2,7 +2,12 @@ import firebase from 'firebase'
 import { ref, onUnmounted } from 'vue'
 
 const config = {
-  // Firebase config here
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+  authDomain: 'time-truck-66c9e.firebaseapp.com',
+  projectId: 'time-truck-66c9e',
+  storageBucket: 'time-truck-66c9e.appspot.com',
+  messagingSenderId: '775854227105',
+  appId: '1:775854227105:web:d3d772b40ff3145d063ae0'
 }
 
 const firebaseApp = firebase.initializeApp(config)
