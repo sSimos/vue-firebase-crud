@@ -10,6 +10,11 @@ yarn install
 yarn serve
 ```
 
+### Fix code
+```
+npm run lint -- --fix
+```
+
 ### Compiles and minifies for production
 ```
 yarn build
