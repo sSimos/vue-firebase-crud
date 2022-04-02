@@ -125,6 +125,12 @@ export const useLoadTasks = () => {
   return tasks
 }
 
+export const useLoadWaitTasks = async () => {
+  let project = 1
+  const snapshot = await db.collection('tasks' + project).get()
+  return snapshot.docs.map(doc => doc.data())
+}
+
 export const registerUser = async (user_email, user_password) => {
   try {
     const resgistration = await firebase
